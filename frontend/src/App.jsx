@@ -3,12 +3,14 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, NavLink, useLocation } from "react-router-dom";
 import { FaHome, FaLandmark, FaMapMarkedAlt, FaInfoCircle, FaCube, FaBars } from "react-icons/fa";
 
-import Home from "./pages/Home.jsx";
-import Sites from "./pages/Sites.jsx";
-import SiteDetail from "./pages/SiteDetail.jsx";
-import Map from "./pages/Map.jsx";
-import About from "./pages/About.jsx";
-import AR from "./pages/AR.jsx";
+import Home from "./pages/Home";
+import AR from "./pages/AR";
+import Sites from "./pages/Sites";
+import SiteDetail from "./pages/SiteDetail";
+import Map from "./pages/Map";
+import About from "./pages/About";
+
+import "./App.css";
 
 // Sidebar component
 const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
@@ -156,7 +158,7 @@ function AppWrapper() {
 function App() {
   return (
     <Router>
-      <AppWrapper />
+        <AppWrapper />
     </Router>
   );
 }
